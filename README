@@ -1,0 +1,18 @@
+Directory contains clientUDP.c and serverUDP.c files that together make UDP connection,
+with client sending strings of numbers, and server returning back the sum of those numbers.
+The functions.c and functions.h files contain files necessary to operate on given strings.
+Client may only sends string containing numbers, spaces and CR+LF symbols.
+Both server and client may operate on various port, yet only provided IPv4 address is localhost
+(127.0.0.1).
+This task is an introduction for network programming using sockets.
+
+To run these programs you need only to have installed C compiller.
+
+Suggested compilation:
+gcc -std=c99 -pedantic -Wall -o client clientUDP.c functions.c
+gcc -std=c99 -pedantic -Wall -o server serverUDP.c functions.c
+
+Running:
+./server [port number]
+
+./client 127.0.0.1 [port number]

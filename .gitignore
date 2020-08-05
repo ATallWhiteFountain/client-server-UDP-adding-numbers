@@ -1,0 +1,7 @@
+# ignore executables
+client
+server
+
+# ignore non-essentials
+.vscode
+..gitignore.swp
